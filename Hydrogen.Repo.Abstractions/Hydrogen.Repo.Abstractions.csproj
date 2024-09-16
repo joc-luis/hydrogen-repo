@@ -14,7 +14,7 @@
         <PackageTags>Repository, Database, CleanCode</PackageTags>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <LangVersion>latest</LangVersion>
-        <Version>1.0.1</Version>
+        <Version>1.5.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
