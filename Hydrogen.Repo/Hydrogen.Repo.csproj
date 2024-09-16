@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <Description>A repository with basic functions</Description>
+        <Copyright>Joc-Luis</Copyright>
+        <PackageProjectUrl>https://github.com/joc-luis/hydrogen-repo</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/joc-luis/hydrogen-repo?tab=MIT-1-ov-file</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/joc-luis/hydrogen-repo</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
+        <PackageTags>Reposiytory, Database, CleanCode</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Title>Hydrogen.Repo</Title>
+        <Authors>Joc-Luis</Authors>
+        <Version>1.1.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="SqlKata" Version="2.4.0" />
+      <PackageReference Include="SqlKata.Execution" Version="2.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Hydrogen.Repo.Abstractions\Hydrogen.Repo.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

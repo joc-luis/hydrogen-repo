@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hydrogen.Repo", "Hydrogen.Repo\Hydrogen.Repo.csproj", "{EF12A37E-EEB6-40BD-A7D6-F75F40198752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hydrogen.Repo.Abstractions", "Hydrogen.Repo.Abstractions\Hydrogen.Repo.Abstractions.csproj", "{E6BA7C73-0BBC-4136-B89E-E342E001B130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hydrogen.Repo.Tests", "Hydrogen.Repo.Tests\Hydrogen.Repo.Tests.csproj", "{5E6810F5-7021-4509-8FB3-09A1188B15D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF12A37E-EEB6-40BD-A7D6-F75F40198752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF12A37E-EEB6-40BD-A7D6-F75F40198752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF12A37E-EEB6-40BD-A7D6-F75F40198752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF12A37E-EEB6-40BD-A7D6-F75F40198752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BA7C73-0BBC-4136-B89E-E342E001B130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BA7C73-0BBC-4136-B89E-E342E001B130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BA7C73-0BBC-4136-B89E-E342E001B130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BA7C73-0BBC-4136-B89E-E342E001B130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6810F5-7021-4509-8FB3-09A1188B15D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6810F5-7021-4509-8FB3-09A1188B15D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6810F5-7021-4509-8FB3-09A1188B15D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6810F5-7021-4509-8FB3-09A1188B15D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
