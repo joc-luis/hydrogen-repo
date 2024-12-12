@@ -32,24 +32,23 @@ namespace Hydrogen.Repo
         {
             var data = GetValues(store, true);
 
-            bool auto = store.GetType()
+            bool autoGuid = store.GetType()
                 .GetProperties()
                 .First(p => p.Name == "Id")
                 .GetCustomAttributes()
                 .Any(a => a.GetType() == typeof(AutoGenerateGuidAttribute));
 
-            if (auto)
-            {
-                await hydrogenContext.QueryFactory
+            if (!autoGuid)
+                return await hydrogenContext.QueryFactory
                     .Query(table)
-                    .InsertAsync(data, transaction: hydrogenContext.DbTransaction, cancellationToken: ct);
-
-                return (TId)data["Id"];
-            }
-
-            return await hydrogenContext.QueryFactory
+                    .InsertGetIdAsync<TId>(data, transaction: hydrogenContext.DbTransaction, cancellationToken: ct);
+            
+            await hydrogenContext.QueryFactory
                 .Query(table)
-                .InsertGetIdAsync<TId>(data, transaction: hydrogenContext.DbTransaction, cancellationToken: ct);
+                .InsertAsync(data, transaction: hydrogenContext.DbTransaction, cancellationToken: ct);
+
+            return (TId)data["Id"];
+
         }
 
         public virtual async Task InsertAsync(IEnumerable<TModel> items, CancellationToken ct = default)

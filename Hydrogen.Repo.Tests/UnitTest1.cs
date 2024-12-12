@@ -83,6 +83,19 @@ public class Tests
     }
     
     [Test]
+    public async Task InsertGetIdAsync()
+    {
+        var userRepository = new UserRepository(context, "Users");
+        var id = await userRepository.InsertGetIdAsync(new User()
+        {
+            Email = Guid.NewGuid().ToString(),
+            Password = "1234567890",
+            RoleId = Guid.NewGuid(),
+            TwoFactor = false
+        });
+    }
+    
+    [Test]
     public async Task UpdateTestAsync()
     {
         var userRepository = new UserRepository(context, "Users");
