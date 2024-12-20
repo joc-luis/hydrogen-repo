@@ -85,7 +85,7 @@ namespace Hydrogen.Repo
                 .UpdateAsync(data, cancellationToken: ct, transaction: hydrogenContext.DbTransaction);
         }
         
-        public virtual async Task DestroyAsync(Guid id, CancellationToken ct = default)
+        public virtual async Task DestroyAsync(TId id, CancellationToken ct = default)
         {
             await hydrogenContext.QueryFactory.Query(table)
                 .Where("Id", id)

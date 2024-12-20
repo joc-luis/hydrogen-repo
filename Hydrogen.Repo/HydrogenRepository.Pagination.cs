@@ -51,9 +51,10 @@ public abstract partial class HydrogenRepository<TModel, TId>
         {
             return GetPaginationAsync<TModel>(column, "=", value, page, take, ct);
         }
-        public Task<PaginationData<TModel>> GetPaginationAsync(string column, string op, object value, int page, int take, CancellationToken ct = default)
+
+        public Task<PaginationData<TModel>> GetPaginationAsync(string column, string op, object value, int page,
+            int take, CancellationToken ct = default)
         {
             return GetPaginationAsync<TModel>(column, op, value, page, take, ct);
         }
-        
 }
